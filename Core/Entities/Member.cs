@@ -1,8 +1,7 @@
 namespace Core.Entities
 {
-    public class Member
+    public class Member : BaseEntity
     {
-        public int Id { get; set; }
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public float DBreakfast { get; set; }
@@ -13,7 +12,6 @@ namespace Core.Entities
         public string Email { get; set; } = string.Empty;
         public string Profession { get; set; } = string.Empty;
         public string Mobile { get; set; } = string.Empty;
-        public DateTime LastModifiedOn { get; set; }
         public int MessId { get; set; }
         public string MessRole { get; set; } = string.Empty;
     }
